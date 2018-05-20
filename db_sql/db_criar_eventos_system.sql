@@ -1,0 +1,47 @@
+CREATE DATABASE db_criar_eventos_system;
+USE db_criar_eventos_system;
+
+create table users(nome varchar(10) not null,
+                                           sobre varchar(10) not null,
+                                           email varchar(50) not null,
+                                           login varchar(45) not null,
+                                           senha varchar(10) not null,
+                                           primary key(login, email));
+CREATE TABLE endereco (local varchar(45) NOT NULL,
+					   av_rua varchar(45) NOT NULL,
+					   numero INT NOT NULL,
+					   bairro varchar(45) NOT NULL,
+					   cidade varchar(45) NOT NULL,
+					   cod_endereco INT NOT NULL AUTO_INCREMENT,
+                                           endereco_user varchar(45) NOT NULL,
+					   PRIMARY KEY (cod_endereco),
+                                           FOREIGN KEY (endereco_user) REFERENCES users(login));
+
+CREATE TABLE eventos (nome varchar(45) NOT NULL,
+					  categoria varchar(45) NOT NULL,
+					  date_inicio_evento date NOT NULL,
+					  hora_inicio_evento time NOT NULL,
+					  date_final_evento date NOT NULL,
+					  hora_final_evento time NOT NULL,
+                                          descricao text NOT NULL,
+					  cod_evento INT NOT NULL AUTO_INCREMENT,
+					  estrangeira INT NOT NULL,
+                                          evento_user varchar(45) NOT NULL,
+                                          link_img text NOT NULL,
+                                          link_evento text NOT NULL,
+					  PRIMARY KEY (cod_evento),
+					  FOREIGN KEY (estrangeira) REFERENCES endereco(cod_endereco),
+					  FOREIGN KEY (evento_user) REFERENCES users(login));
+CREATE TABLE ingresso (tipo varchar(45) NOT NULL,
+					   preco INT NOT NULL,
+					   quantidade INT NOT NULL,
+					   date_inicio_vendas date NOT NULL,
+					   hora_inicio_vendas time NOT NULL,
+					   date_final_vendas date NOT NULL,
+					   hora_final_vendas time NOT NULL,
+					   cod_ingresso INT NOT NULL AUTO_INCREMENT, 
+					   estrangeira_ingresso INT NOT NULL,
+                                           ingresso_user varchar(45) NOT NULL,
+					   PRIMARY KEY (cod_ingresso, estrangeira_ingresso),
+					   FOREIGN KEY (estrangeira_ingresso) REFERENCES eventos(cod_evento),	   
+                                           FOREIGN KEY (ingresso_user) REFERENCES users(login));

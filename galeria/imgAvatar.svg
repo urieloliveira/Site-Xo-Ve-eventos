@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Interna-Novo-Header-Desativado" sketch:type="MSArtboardGroup" transform="translate(-1153.000000, -16.000000)" fill="#7F6502">
+            <g id="Header" sketch:type="MSLayerGroup">
+                <g id="entrar" transform="translate(1153.000000, 16.000000)" sketch:type="MSShapeGroup">
+                    <path d="M15,0 C6.75,0 0,6.75 0,15 C0,23.25 6.75,30 15,30 C23.25,30 30,23.25 30,15 C30,6.75 23.25,0 15,0 L15,0 Z M15,4.5 C17.55,4.5 19.5,6.45 19.5,9 C19.5,11.55 17.55,13.5 15,13.5 C12.45,13.5 10.5,11.55 10.5,9 C10.5,6.45 12.45,4.5 15,4.5 L15,4.5 Z M15,25.8 C11.25,25.8 7.95,23.85 6,21 C6,18 12,16.35 15,16.35 C18,16.35 24,18 24,21 C22.05,23.85 18.75,25.8 15,25.8 L15,25.8 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

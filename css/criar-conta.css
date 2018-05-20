@@ -1,0 +1,149 @@
+#divMenu {
+        font:normal 20pt Calibri;
+        border:1px dotted blue;
+        width:200px;
+        padding:0;
+        position:absolute;
+        background:rgba(133, 192, 242, 0.54);
+        background-position:-1100px -200px;
+        visibility:hidden;
+    }
+
+    #divMenu ul{
+        list-style-type:none;
+        margin:0;
+        line-height:50px;
+        padding:0;
+        text-align:center;
+    }
+
+     ul, li {
+        cursor:pointer;
+    }
+
+      ul,  li:nth-child{
+        border-bottom:1px dotted;
+    }
+
+    #divMenu,  ul,  li:hover {
+        background-color:rgba(133, 192, 242, 0.7);
+    }
+#contem{
+	z-index:1;
+	margin:-25px auto 0px auto;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+        width: 1060px;
+        background-color: #FFF;
+    }
+.contem_criar{
+    height: 510px; 
+}
+.contem_login{
+    height: 280px;
+}
+#cadastro_criar{
+    position:relative;
+    width:482px;
+    height: 440px;
+    padding:12px 0px 0px 18px;
+}
+#cadastro_login{
+    position:relative;
+    width:482px;
+    height: 210px;
+    padding:12px 0px 0px 18px;
+}
+#cadastro_login a{
+    float: right;
+    margin: 8px 220px 0px 0px;
+}
+.cadastro_rigth{
+    float: right;
+    margin:-452px 30px 0px 0px;
+}
+.cadastro_left{
+    float: left;
+    margin:30px 30px 0px 30px;
+    border-right: solid 1px #D6D6D6;
+}
+#cadastro_login input{
+    font-size: 16px;
+    width: 440px;
+    margin:7px 0px 18px 0px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#cadastro_criar input{
+    font-size: 16px;
+    width: 440px;
+    margin:7px 0px 18px 0px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.form_button_log{
+        font-size: 18px;
+ 	background-color: #b22222;
+	float:left;
+ 	margin:0px 0px 20px 0px;
+	padding:0px 10px 0px 10px;
+        height: 40px;
+        width: 120px;
+	border: none;
+	border-radius: 2px;
+	color: white;
+ }
+ #session{
+	float:right;
+	list-style:none; 
+	z-index: 1;
+	margin-top: 20px;
+	background-color: white;
+}
+#session_criar{
+        float:right;
+        list-style:none; 
+        z-index: 1;
+        margin-top: 20px;
+        margin-right: 108px;
+        background-color: white;
+}
+#abrange a{
+	font-size: 15px;
+	padding: 5px;
+	color: #3f3f3f;
+	text-decoration:none; 
+	display:block;
+}
+#abrange a:hover{
+	color: #b22222;
+	background-color: white;
+ }
+.menu{
+    text-align: right;
+    border: solid 1px black;
+	padding:0px;
+    background-color:white;
+	-webkit-box-shadow:0 2px 2px 0 #ccc; 
+}
+
+.menu li{
+    position:relative;	
+}
+
+.menu li   ul{
+    position:relative; 
+    background-color:#fff; 
+    display:none;
+	float:right;
+}
+
+.menu li:hover ul, .menu li.over ul{
+	padding:0px;
+    display:block;
+}
+
+.menu li ul li{ 
+    display:block; 
+}
+
